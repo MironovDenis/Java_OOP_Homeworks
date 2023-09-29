@@ -21,7 +21,7 @@ public class Cat extends Animal implements Runable, Swimable, Speakable, Illable
 
     @Override
     public void swim() {
-
+        System.out.println(this.TYPE + " плывет");
     }
 
     @Override
@@ -32,11 +32,12 @@ public class Cat extends Animal implements Runable, Swimable, Speakable, Illable
 
     @Override
     public void speak() {
-        System.out.println("Мяу!");
+        System.out.println(this.TYPE + " говорит Мяу!");
     }
 
     @Override
     public void getIll() {
+        System.out.println(this.TYPE + " болеет");
 
     }
 }

@@ -3,8 +3,8 @@ package animal;
 import VetClinic.Illable;
 
 public class Dog extends Animal implements Runable, Swimable, Speakable, Illable {
-    public Dog(String name, double weight, String color) {
-        super(name, weight, color);
+    public Dog(String name) {
+        super(name);
     }
 
     @Override
@@ -30,11 +30,12 @@ public class Dog extends Animal implements Runable, Swimable, Speakable, Illable
 
     @Override
     public void speak() {
-        System.out.println("Гав!");
+        System.out.println(this.TYPE + " говорит Гав!");
     }
 
     @Override
     public void getIll() {
+        System.out.println(this.TYPE + " болеет");
 
     }
 }

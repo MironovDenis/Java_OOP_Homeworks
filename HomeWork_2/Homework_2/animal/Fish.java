@@ -12,6 +12,7 @@ public class Fish extends Animal implements Swimable, Illable {
 
     @Override
     public void swim() {
+        System.out.println(this.TYPE + " плывет");
 
     }
 
@@ -22,6 +23,7 @@ public class Fish extends Animal implements Swimable, Illable {
 
     @Override
     public void getIll() {
+        System.out.println(this.TYPE + " болеет");
 
     }
 }

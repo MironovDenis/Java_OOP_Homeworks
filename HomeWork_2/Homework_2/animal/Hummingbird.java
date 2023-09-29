@@ -23,6 +23,6 @@ public class Hummingbird extends Animal implements Flyable, Speakable{
 
     @Override
     public void speak() {
-        System.out.println("Чирик!");
+        System.out.println(this.TYPE + " говорит Чирик!");
     }
 }

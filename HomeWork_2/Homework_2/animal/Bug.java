@@ -1,7 +1,7 @@
 package animal;
 
 public class Bug extends Animal implements Runable, Flyable{
-        public Bug(String name) {
+        public Bug(String name, double v, String черный) {
         super(name);
 
     }
