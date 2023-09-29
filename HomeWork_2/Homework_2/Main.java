@@ -1,4 +1,6 @@
+import VetClinic.Doctor;
 import VetClinic.Illable;
+import VetClinic.Nurse;
 import VetClinic.VeterinaryClinic;
 import animal.*;
 
@@ -46,6 +48,22 @@ public class Main {
         for (Illable illing: allAnimals.getIllingAnimals()) {
             illing.getIll();
         }
+
+        Doctor doc = new Doctor("Джон", "male", 58, "Мэри");
+        Nurse nurse = new Nurse("Мэри", "female", 33);
+
+
+        System.out.println("\nЛечение животных: ");
+        for (Animal animal: allAnimals.getAnimals()){
+            if (animal instanceof Illable){
+                doc.heal(animal);
+                doc.callNurse();
+                nurse.getHelp();
+                System.out.println(animal.getName() + " выздоровел!" + "\n");
+
+            }
+        }
+
 
     }
 }
